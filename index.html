@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Rubik+Pixels&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="viewpage">
+        <div class="left-content">
+            <div class="title">
+                <p>CURRENT TIME</p><br>
+                <h5>GMT+5:30 (Indian Standard Time)</h5>
+            </div>
+            <div class="display-time">
+                <div id="time"></div>
+                <div id="display-date" class="display-date"></div>
+                <div class="seven-segment">
+                    <div class="display-hour1">
+                        <div class="hour1-upper">
+                            <div class="hour1-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-hour1 no-animation"></div>
+                        <div class="hour1-lower">
+                            <div class="hour1-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-hour2">
+                        <div class="hour2-upper">
+                            <div class="hour2-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-hour2 no-animation"></div>
+                        <div class="hour2-lower">
+                            <div class="hour2-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colon">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="display-minute1">
+                        <div class="minute1-upper">
+                            <div class="minute1-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-minute1 no-animation"></div>
+                        <div class="minute1-lower">
+                            <div class="minute1-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-minute2">
+                        <div class="minute2-upper">
+                            <div class="minute2-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-minute2 no-animation"></div>
+                        <div class="minute2-lower">
+                            <div class="minute2-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colon">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="display-second1">
+                        <div class="second1-upper">
+                            <div class="second1-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-second1 no-animation"></div>
+                        <div class="second1-lower">
+                            <div class="second1-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-second2">
+                        <div class="second2-upper">
+                            <div class="second2-visible">
+                                <div class="segment1 inactive-segment"></div>
+                                <div class="segment2 inactive-segment"></div>
+                                <div class="segment3 inactive-segment"></div>
+                                <div class="segment4u inactive-segment"></div>
+                            </div>
+                        </div>
+                        <div class="flip-second2 no-animation"></div>
+                        <div class="second2-lower">
+                            <div class="second2-visible">
+                                <div class="segment4l inactive-segment"></div>
+                                <div class="segment5 inactive-segment"></div>
+                                <div class="segment6 inactive-segment"></div>
+                                <div class="segment7 inactive-segment"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="display-day" class="display-day"></div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="display-clock">
+                <div class="clock">
+                    <div class="strip1"></div>
+                    <div class="strip2"></div>
+                    <div class="strip3"></div>
+                    <div class="strip4"></div>
+                    <div class="strip5"></div>
+                    <div class="strip6"></div>
+                    <div class="strip7"></div>
+                    <div class="strip8"></div>
+                    <div class="strip9"></div>
+                    <div class="strip10"></div>
+                    <div class="strip11"></div>
+                    <div class="strip12"></div>
+                    <div class="circle"></div>
+                    <div class="minute" id="minute" value="0"></div>
+                    <div class="hour" value="0" id="hour"></div>
+                    <div class="second" value="0" id="second"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>
