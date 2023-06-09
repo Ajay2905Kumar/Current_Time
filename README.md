@@ -15,5 +15,7 @@ The fonts used in this webpage are Google fonts (Blaka Hollow and Rubik Pixels).
       - Fading
 2. Analog Time
   * It is as usual as per our clocks.
+
+
 Here is a screenshot of the webpage showing the time both in analog and digital:
 ![Webpage_Screenshot](https://github.com/Ajay2905Kumar/Current_Time/assets/95973318/dab1e0e0-082c-47a4-9d2b-55dd2e2c8fe7)
