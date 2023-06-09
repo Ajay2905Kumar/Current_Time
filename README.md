@@ -6,4 +6,4 @@
 The fonts used in this webpage are Google fonts (Blaka Hollow and Rubik Pixels). Loading of fonts may take few more seconds...
 
 Here is a screenshot of the webpage showing the time both in analog and digital:
-![Webpage Screenshot](/Webpage_Screenshot.png)
+![Webpage Screenshot](Webpage_Screenshot.png)
